@@ -1,0 +1,18 @@
+UNCHA - Batch Background Removal Tool - USER GUIDE DOCUMENTATION
+
+  This is the Free Version of UNCHA. Please consider paying for the Paid (PREMIUM) Version 
+which has more features, no adds, continued support and will help me pay my bills. I'm a 
+poor poor person who needs to pay my bills, but I'm not able to sometimes because I have 
+soo soo little money. This is the type of ad that will be removed when you pay for the 
+Premium version of UNCHA which is on sale for one low price of $5 USD. But there's a sale, 
+send me any money at all even a dollar and I'll you can download the PREMIUM Version. Yay!
+Now that that's out of the way lets get to the user guide!
+
+  This application will pull all the items in a user specified directory and search that folder 
+for any images. The found images are copied, then the copy of the image is processed to have the Background
+removed then it is saved as a transparent png with the same name as the original image file to the user
+specified target directory.
+    Once valid Path in and out are selected click the "Set as Default" buttons to save them for next time.
+    Please ensure that the Path in and Path out are not the same directory. 
+    Please ensure that the Path in and Path out are specified and valid directories.
+    Please ensure that there are image files located in the Path In directory.
