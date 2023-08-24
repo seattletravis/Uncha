@@ -38,7 +38,6 @@ def select_app_info():
     app_info.set("PATH IN & PATH OUT ACCEPTED - READY...")
     run_batch_removal_tool_button["state"] = "normal"
     
-    
 def set_default_in():
   with open("default_in.txt", "w") as file:
     file.write(named_directory_in.get())
@@ -161,7 +160,6 @@ processing_line_1 = ttk.Label(root, textvariable=processing_status).grid(pady=6,
 processing_line_2 = ttk.Label(root, textvariable=image_processed).grid(row=7, column=1)
 processing_line_3 = ttk.Label(root, textvariable=already_processed).grid(row=8, column=1)
 processing_line_4 = ttk.Label(root, textvariable=nonimage).grid(row=9, column=1)
-
 
 #END CODE FOR ROOT WINDOW
 #START CODE FOR GUIDE WINDOW
