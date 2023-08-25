@@ -29,6 +29,7 @@ pip install tk
 
 ## See all the code here
 ```python
+
 from rembg import remove
 from PIL import Image
 import os
@@ -58,17 +59,16 @@ def select_app_info():
   elif named_directory_out.get() == '':
     app_info.set("PLEASE SELECT PATH OUT")
   elif not os.path.exists(named_directory_in.get()) and not os.path.exists(named_directory_out.get()):
-    app_info.set("PATH NAMES HAVE BEEN CHANGED/DELETED - RESELECT IN & OUT")
+    app_info.set("PATHS HAVE BEEN CHANGED/DELETED - RESELECT IN & OUT")
   elif not os.path.exists(named_directory_in.get()):
-    app_info.set("PATH IN NAME HAS BEEN CHANGED/DELETED - RESELECT PATH IN")
+    app_info.set("PATH IN HAS BEEN CHANGED/DELETED - RESELECT PATH IN")
   elif not os.path.exists(named_directory_out.get()):
-    app_info.set("PATH OUT NAME HAS BEEN CHANGED/DELETED - RESELECT PATH OUT")
+    app_info.set("PATH OUT HAS BEEN CHANGED/DELETED - RESELECT PATH OUT")
   elif named_directory_out.get() == named_directory_in.get():
     app_info.set("PATH OUT CANNOT BE THE SAME AS PATH IN")
   else:
-    app_info.set("PATH IN & PATH OUT ACCEPTED")
+    app_info.set("PATH IN & PATH OUT ACCEPTED - READY...")
     run_batch_removal_tool_button["state"] = "normal"
-    
     
 def set_default_in():
   with open("default_in.txt", "w") as file:
@@ -193,24 +193,34 @@ processing_line_2 = ttk.Label(root, textvariable=image_processed).grid(row=7, co
 processing_line_3 = ttk.Label(root, textvariable=already_processed).grid(row=8, column=1)
 processing_line_4 = ttk.Label(root, textvariable=nonimage).grid(row=9, column=1)
 
-#END CODE FOR ROOT WINDOW
-#START CODE FOR GUIDE WINDOW
-
+#Button to open UserGuide Window
 userguide_button = ttk.Button(root, text="User Guide", command=toggle_visibility_on)
 userguide_button.grid(pady=10, row=10, column=0)
-top = tk.Toplevel(root)
-top.geometry("680x400")
+
+#Create UserGuide Window
+top = tk.Toplevel()
+top.minsize(750, 500)
 top.title("UNCHA - User Guide")
 with open("user_guide.txt", "r") as file:
   loaded_contents = file.read()
-user_guide_contents = tk.StringVar(top, loaded_contents)
-ttk.Label(top, text=user_guide_contents.get()).grid()
-top.protocol("WM_DELETE_WINDOW", top.iconify)
+user_guide_text = tk.StringVar(top, loaded_contents)
+top.protocol("WM_DELETE_WINDOW", toggle_visibility_off)
 top.withdraw()
 
-userguide_close_only_button = ttk.Button(top, text="Close User Guide", command=toggle_visibility_off).grid(pady=10, row=10, column=0)
+scrollbar = tk.Scrollbar(top, orient="vertical")
+text_box = tk.Text(top, font=("Helvetica", "10"), yscrollcommand=scrollbar.set)
 
-#END CODE FOR GUIDE WINDOW
+text_box.insert(tk.END, loaded_contents)
+text_box.config(state="disabled")
+
+scrollbar.config(command=text_box.yview)
+
+scrollbar.pack(side="right", fill="y")
+text_box.pack(fill="both", expand=1)
+
+userguide_close_button = ttk.Button(top, text="Close User Guide", command=toggle_visibility_off)
+userguide_close_button.pack(side="left", pady=10, padx=10)
+
 
 root.mainloop()
 
