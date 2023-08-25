@@ -1,18 +1,55 @@
-UNCHA - Batch Background Removal Tool - USER GUIDE DOCUMENTATION
+        
+        UNCHA - Batch Background Removal Tool - USER GUIDE DOCUMENTATION
 
-  This is the Free Version of UNCHA. Please consider paying for the Paid (PREMIUM) Version 
-which has more features, no adds, continued support and will help me pay my bills. I'm a 
-poor poor person who needs to pay my bills, but I'm not able to sometimes because I have 
-soo soo little money. This is the type of ad that will be removed when you pay for the 
-Premium version of UNCHA which is on sale for one low price of $5 USD. But there's a sale, 
-send me any money at all even a dollar and I'll you can download the PREMIUM Version. Yay!
-Now that that's out of the way lets get to the user guide!
+        FOREWORD
 
-  This application will pull all the items in a user specified directory and search that folder 
-for any images. The found images are copied, then the copy of the image is processed to have the Background
-removed then it is saved as a transparent png with the same name as the original image file to the user
-specified target directory.
-    Once valid Path in and out are selected click the "Set as Default" buttons to save them for next time.
-    Please ensure that the Path in and Path out are not the same directory. 
-    Please ensure that the Path in and Path out are specified and valid directories.
-    Please ensure that there are image files located in the Path In directory.
+        This is the Free Version of UNCHA. Please consider paying for the Paid (PREMIUM) Version 
+    which has more features, no ads, continued support and will help me pay my bills. I'm a 
+    poor poor person who needs to pay my bills, but I'm not able to sometimes because I have 
+    soo soo little money. This is the type of ad that will be removed when you pay for the 
+    Premium version of UNCHA which is on sale for one low price of $5 USD. But there's a sale, 
+    send me any money at all even a dollar and you can download the PREMIUM Version. Yay!
+    Now that that's out of the way lets get to the user guide!
+
+        1. HOW TO USE
+
+        This application will pull all the files in a user specified directory and search that folder 
+    for all images. The found images are copied, then the copy of the image is processed to have the Background
+    removed then it is saved as a transparent png with the same name as the original image file to the user
+    specified target directory.
+
+        Once valid Path in and out are selected click the "Set as Default" buttons to save them for next time.
+
+        Please ensure that the Path in and Path out are not the same directory. 
+
+        Please ensure that the Path in and Path out are specified and valid directories.
+
+        Please ensure that there are image files located in the Path In directory.
+
+        Please ensure that images are of the file types - PNG, GIF, and/or TIFF
+
+
+        2. IMAGE QUALITY - Supported file types: PNG, TIFF, & GIF 
+        
+        (JPG, & JPEG are not supported)
+
+        Image file type will be converted to image with transparent background and keep their file type, So a TIFF image 
+    will yield a Transparent TIFF and a GIF image will yield a Transparent GIF image. JPEG files are not supported as 
+    JPEG does not support Transparent JPEG images. Most use cases for this software are for the PNG image to 
+    Transparent PNG image file. This works well and has good support accross most design and web applications.
+
+        UNCHA supports PNG, TIFF, and GIF images. Support for other image types will be added when able to do so.
+
+        UNCHA has limitations on what backgrounds are removable. UNCHA will not be able to remove some backgrounds.
+
+        UNCHA works best with images that have a clear subject and a well defined background. 
+
+        (However it may do more difficult images, try it on harder gackgrounds to see it's capabilities)
+
+
+
+
+
+
+
+
