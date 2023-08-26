@@ -4,13 +4,13 @@
 
 bg remover is a python program meant to be ran inside of an editor, use any editor that has access to os. (Or run from terminal/CMD) First setup a folder where you'll keep you images that need the bg removed, then create an empty folder in another location where the images with transparent backgrounds will get saved.
 
-In the next video we will turn this python script into an Application so we can put it up for download on my Patreon Page. Please subscribe to my Youtube Channel and support me becuase coding and not having an income is hard, so very hard.
+In the next video we will turn this python script into an Application so we can put it up for download on my Patreon Page. Please subscribe to my Youtube Channel and support me because coding and not having an income is hard, so very hard.
 
 Run bg_remover_with_GUI, then select both folders using the GUI navigation.
 
-## [Video Tutorial!](https://youtu.be/UU1haHfD5d0)
-This Video Tutorial, Part 6, we add userguide access and functionality, as well as grey out the run button to prevent application from breaking before Path in and Path out are validated. This is the final video in this Python Coding Tutorial. I hope you liked it please subscribe to my youtube channel. Thanks!!!
-Previously in Part 5 = add the progress bar and some error handling! Watch this video to see the code in action, or if you have issues running it, or if you want to learn how it was written. This is a coding tutorial video. [Video Link](https://youtu.be/UU1haHfD5d0)
+## [Video Tutorial!](https://youtu.be/bzIbVodszLU)
+This Video Tutorial, Part 6, we add userguide access and functionality, as well as grey out the run button to prevent application from running (and potentially breaking) before Path in and Path out are validated. This is the final video in this Python Coding Tutorial. I hope you liked it, please subscribe to my youtube channel. Thanks!!!
+Previously in Part 5 = add the progress bar and some error handling! Watch this video to see the code in action, or if you have issues running it, or if you want to learn how it was written. This is a coding tutorial video. [Video Link](https://youtu.be/bzIbVodszLU)
 
 ## Installation
 
