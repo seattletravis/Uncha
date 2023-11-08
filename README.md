@@ -5,6 +5,8 @@ Uncha is a Windows Application for removing all image backgrounds from a specifi
 
 Run bg_remover_with_GUI, then select both folders using the GUI navigation.
 
+This repository contains working code from all 6 parts in the series as it changed from the initial script application to the Windows application with a GUi interface.
+
 ## [Video Tutorial!](https://youtu.be/bzIbVodszLU)
 This Video Tutorial, Part 6, we add userguide access and functionality, as well as grey out the run button to prevent application from running (and potentially breaking) before Path in and Path out are validated. This is the final video in this Python Coding Tutorial. I hope you liked it, please subscribe to my youtube channel. Thanks!!!
 Previously in Part 5 = add the progress bar and some error handling! Watch this video to see the code in action, or if you have issues running it, or if you want to learn how it was written. This is a coding tutorial video. [Video Link](https://youtu.be/bzIbVodszLU)
