@@ -222,7 +222,6 @@ text_box.pack(fill="both", expand=1)
 userguide_close_button = ttk.Button(top, text="Close User Guide", command=toggle_visibility_off)
 userguide_close_button.pack(side="left", pady=10, padx=10)
 
-
 root.mainloop()
 
 ```
